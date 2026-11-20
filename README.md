@@ -1,6 +1,20 @@
-# Detecção de fraude em cartão de crédito
+# Detector de Fraudes em Cartão de Crédito
 
-Projeto de classificação binária em um cenário muito desbalanceado (99,83% de transações normais e 0,17% de fraudes). O foco é escolher as métricas certas para a classe de fraude, comparar modelos, ajustar o limiar de decisão e explicar o que levou o modelo a marcar uma transação como fraude.
+Breve resumo do problema (detecção de transações fraudulentas em cenário altamente desbalanceado) e da abordagem utilizada.
+
+## Dataset
+- Origem / descrição do conjunto de dados e proporção de fraudes (~0,17%).
+- Como obter ou colocar o arquivo de dados na pasta esperada.
+
+## Abordagem e Pipeline
+- Pré-processamento (`StandardScaler` via `Pipeline`, `train_test_split` estratificado, transformação de variáveis).
+- Modelos avaliados e otimização de hiperparâmetros.
+- Análise de limiar de decisão e trade-off entre Precisão, Recall e F1.
+- Interpretabilidade global e local com SHAP.
+
+## Principais Resultados
+- Tabela ou resumo comparando os modelos e o impacto da mudança de limiar.
+- Principais conclusões e limitações identificadas.
 
 ## Como executar
 
